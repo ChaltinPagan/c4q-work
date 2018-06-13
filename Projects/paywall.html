@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paywall</title>
+
+        <style>
+                div {
+                    border: 1px dotted black;
+                    height: 100px;
+                    width: 100px;
+                    display: inline-block;
+                    margin: 20px;
+                }
+            </style>
+    </head>
+
+    <body>
+        <h1>Paywall Project</h1>
+
+        <form>
+            <fieldset>
+                <legend>Create a Payment</legend>
+                <p>Type of Payment</p>
+                <select id="paytype">
+                    <option name="membership">Membership</option>
+                    <option name="subfee">Submission Fee</option>
+                </select>
+
+                <p>Name of Payment</p>
+                <input id="payname" type="text" name="payname">
+                
+                <p>Cost</p>
+                <input id="cost" type="text" name="cost">
+
+                <p></p>
+                <button id="create">Create</button>
+            </fieldset>
+        </form>
+
+        <script src="payments.js"></script>
+    </body>
+</html>
