@@ -1,0 +1,62 @@
+<!-- Quadrant​ ​ Toggle
+Using​ ​ the​ ​ files​ ​ quadrant-toggle.html ​ ​ and​ ​ quadrant-toggle.js ​ , ​ ​ build​ ​ a ​ ​ page​ ​ with​ ​ four​ ​ divs​ ​ that​ ​ each
+occupy​ ​ a ​ ​ quarter​ ​ of​ ​ the​ ​ window:​ ​ #topLeft,​ ​ #topRight,​ ​ #bottomLeft,​ ​ and​ ​ #bottomRight.​ ​ When​ ​ a
+user​ ​ clicks​ ​ any​ ​ quadrant,​ ​ the​ ​ background-color​​ ​ property​ ​ of​ ​ that​ ​ div​ ​ should​ ​ change​ ​ from
+white​ ​ to​ ​ black,​ ​ or​ ​ from​ ​ black​ ​ to​ ​ white,​ ​ as​ ​ appropriate.​ ​ (If​ ​ you​ ​ prefer​ ​ other​ ​ colors​ ​ you​ ​ are
+encouraged​ ​ to​ ​ use​ ​ them.) -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quadrant Toggle</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            div {
+                height: 50vh;
+                width: 50vw;
+                position: absolute;
+                border: 1px dotted black; 
+                background-color: white;
+            }
+            
+            #topLeft {
+                top: 0;
+                left: 0;
+                
+            } 
+            
+            #topRight {
+                top: 0;
+                right: 0; 
+                
+            }
+            
+            #bottomLeft {
+                bottom: 0;
+                left: 0;
+                
+            }
+            
+            #bottomRight {
+                bottom: 0;
+                right: 0;
+                
+            }   
+        </style>             
+    </head>
+
+    <body id ="body">
+
+        <div id="topLeft"></div>
+        <div id="topRight"></div>
+        <div id="bottomLeft"></div>
+        <div id="bottomRight"></div>
+
+        <script src="quadrant-toggle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background-color: #556B2F;
+    font-size: 28px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+table {
+    margin: auto;
+}
+
+#left {
+    font-family: 'Overpass Mono', monospace;
+}
+
+#right {
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+th, td {
+    padding: 6px auto;
+    width: 275px;
+    border-bottom: 1px solid black;
+}

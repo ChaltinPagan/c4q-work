@@ -1,0 +1,79 @@
+<!-- Rock Paper Scissors API
+
+At http://codyhess.com:9001 (Links to an external site.)Links to an external site. , there is an API that will take 'rock', 'paper', or 'scissors' as the first argument in its path. It will accept a name as the second argument in its path. Given one argument, the API will return a JSON object with the results of a single "Rock, Paper, Scissors" match against a computer opponent. Given both arguments, the API will return a JSON object with the results of a single match, as well as the total wins, losses, and ties in the entire history of matches for that name.
+
+API documentation and hints are available at the base endpoint (link).
+
+You may use the API with fetch() or XMLHttpRequest().
+
+Use the API and the files rps-<yourname>.html, rps-<yourname>.css, and rps-<yourname>.js to build a page that meets the following specifications.
+
+HTML
+
+    has header "Rock, Paper, Scissors
+    has a text input field with attribute placeholder=" enter a name"
+    has a button "play rock"
+    has a button "play paper"
+    has a button "play scissors"
+    has a paragraph with text "user chooses:"
+    has a paragraph with text "computer chooses:"
+    has a paragraph with text "result"
+    has an empty paragraph with attribute id="tWin"
+    has an empty paragraph with attribute id="tLose"
+    has an empty paragraph with attribute id="tTie"
+
+JavaScript
+
+    clicking "play rocks", "play paper", or "play scissors", will:
+        call the API with an appropriate first argument (rock, paper, or scissors)
+        if there is user input in the text field, use that as a second argument to the API
+        the API response is converted to a JSON object
+        the response data is displayed appropriately in the paragraphs
+        if there is no input to the text field, the final three paragraph elements are empty
+        if there is a name in the text field, the final three paragraphs say:
+            "Total Wins: X"
+            "Total Losses: Y"
+            "Total Ties: Z"
+            Replace X, Y, and Z with appropriate data from the API response.
+
+CSS
+
+    page has grey background
+    content is centered
+    buttons are below the input field (you can use HTML for this)
+    font for all elements is Bubblegum Sans
+
+Upload rps-<yourname>.html. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock, Paper, Scissors API</title>
+
+        <link rel="stylesheet" type="text/css" href="rps-chaltin.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet"> 
+        
+    </head>
+
+    <body>
+        <h1>Rock, Paper, Scissors</h1>
+
+        <input type="text" name="text" placeholder="Enter a name">
+        <p></p>
+        <button id="rock">Play Rock</button>
+        <button id="paper">Play Paper</button>
+        <button id="scissors">Play Scissors</button>
+
+        <p id="user">User chooses:</p>
+        <p id="comp">Computer chooses:</p>
+        <p id="res">Result:</p>
+        <p></p>
+
+        <p id="tWin"></p>
+        <p id="tLose"></p>
+        <p id="tTie"></p>
+
+        <script src="rps-chaltin.js"></script>
+    </body>
+</html> 

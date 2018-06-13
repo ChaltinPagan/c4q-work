@@ -1,0 +1,32 @@
+a {
+    color: blue;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+/*My first paragraph is the 4th child of the <body>.
+p:nth-child(4)::first-line {
+    text-transform: uppercase;
+}*/
+
+p:nth-of-type(2)::first-line {
+    text-transform: uppercase;
+}
+
+
+
+/*My second paragraph is the 6th child of the <body>.*/
+p:nth-child(6)::first-line {
+    background-color: pink;
+}
+
+img:hover {
+    border: 2em dotted orange;
+}

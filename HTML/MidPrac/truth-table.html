@@ -1,0 +1,81 @@
+<!--Truth Table
+
+Using the files truth-table.html and truth-table.css, build a web page that meets the following specifications.
+
+    light blue background
+    dark blue text
+    a title in the browser tab that reads "Truth Table"
+    a heading in the content that reads "Truth Table"
+    a horizontal rule or bottom border under the heading
+    the heading should have an sans-serif font
+    a truth table (see below) should be built with a mono-space font
+    the truth table has a white outer border
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Truth Table</title>
+
+        <!--I can only upload one file to canvas, so my CSS is inside my head tags-->
+        <style> 
+            body {
+                text-align: center;
+            }
+            
+            table, th, td {
+                border: 2px solid black;
+                margin: auto;
+                width: 350px;
+                height: 50px;
+            }
+
+            #first th {
+                background-color: lightgrey;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Truth Table</h1>
+        <div>
+        <table>
+            <tr id = "first">
+                <th>A</th>
+                <th>B</th>
+                <th>A &amp; &amp; B</th>
+            </tr>
+
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
+            </tr>
+
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>   
+            
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                
+            </tr>
+
+        </table>
+        </div>
+    </body>
+</html>

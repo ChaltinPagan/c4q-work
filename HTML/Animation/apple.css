@@ -1,0 +1,21 @@
+body {
+    background-color: lightgreen;
+}
+
+img {
+    width: 200px;
+    animation-name: apple;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+}
+
+@keyframes apple {
+    from {
+        margin-bottom: 100%;
+    }
+    to {
+        margin-top: 100%;
+    }
+}

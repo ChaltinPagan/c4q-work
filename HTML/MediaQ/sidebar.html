@@ -1,0 +1,83 @@
+<!--
+
+Sidebar
+
+No media queries yet! Build a page about strawberries that includes a left sidebar. The left sidebar will use position: absolute and width: 20%. The main content of the page will display to the right of the sidebar. The sidebar should include three hyperlinks to other pages about strawberries.
+
+Save this page as sidebar.html and upload the file.
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strawberries</title>
+        <style>
+            /*div {
+                border: 2px dashed red;
+            }*/
+
+            html {
+                background-color: pink;
+            }
+
+            body {
+                height: 100%;
+                width: 80%;
+                margin: 0 auto;
+
+                background-color: white;
+            }
+
+            #main {
+                width: 70%;
+                margin-left: 25%;
+                padding: 20px;
+            }
+            #sidebar {
+                position: absolute;
+                width: 20%;
+                top: 2em;
+                left: 12%;
+            }
+
+            img {
+                width: 75%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id = 'main'>
+            <h1>Strawberries</h1>
+
+            <h2>Uses</h2>
+            <p>In addition to being consumed fresh, strawberries can be frozen, made into preserves,[43] as well as dried and used in prepared foods, such as cereal bars. Strawberries and strawberry flavorings are a popular addition to dairy products, such as strawberry-flavored milk, strawberry ice cream, strawberry milkshakes, strawberry smoothies and strawberry yogurts. Strawberries and cream is a popular dessert during the British summer, famously consumed at the Wimbledon tennis tournament. In Sweden, strawberries are a traditional dessert served on St John's Day, also known as Midsummer's Eve. Depending on area, strawberry pie, strawberry rhubarb pie, or strawberry shortcake are also popular. In Greece, strawberries are usually sprinkled with sugar and then dipped in Metaxa, a famous brandy, and served as a dessert. In Italy, strawberries have been used for various desserts and as a popular flavoring for gelato (gelato alla fragola). In the Philippines, strawberries are also popular, in which it is used for making the syrup in taho.
+                    
+                    Strawberry pigment extract can be used as a natural acid/base indicator due to the different color of the conjugate acid and conjugate base of the pigment.
+                </p>
+            
+            <h2>Health Effects</h2>
+            <p>
+                    
+                    Few studies have directly examined the effects of eating strawberries on human health. However, limited research indicates that strawberry consumption may be associated with a decreased cardiovascular disease risk and that phytochemicals present in strawberries have anti-inflammatory or anticancer properties in laboratory studies. Epidemiological studies have associated strawberry consumption with lower rates of hypertension, inflammation, cancer, and death from cardiovascular diseases. Certain studies have suggested that strawberry consumption may have beneficial effects in humans such as lowering blood LDL cholesterol levels, total cholesterol, reducing the oxidation of LDL cholesterol, and decreasing the spike in blood sugar after high sugar meals and the spike in blood cholesterol seen after high-fat meals.
+            </p>
+
+            <p>Source: <a href = 'https://en.wikipedia.org/wiki/Strawberry#Uses'>Wikipedia</a></p>
+
+        </div>
+
+        <div id = 'sidebar'>
+            <img src = 'https://upload.wikimedia.org/wikipedia/commons/d/da/Strawberries_with_hulls_-_scan.jpg'>
+
+            <h3>Recipes:</h3>
+            <ul>
+                <li><a href = 'http://allrecipes.com/recipes/16357/desserts/cakes/shortcake/strawberry-shortcake/?internalSource=hub%20nav&referringId=1110&referringContentType=recipe%20hub&linkName=hub%20nav%20daughter&clickId=hub%20nav%202'>Strawberry Shortcake</a></li>
+                <li><a href = 'http://allrecipes.com/recipes/15137/salad/fruit-salads/strawberry-salad/?internalSource=hub%20nav&referringId=1110&referringContentType=recipe%20hub&linkName=hub%20nav%20daughter&clickId=hub%20nav%202'>Strawberry Salad</a></li>
+                <li><a href = 'http://allrecipes.com/recipes/16762/desserts/cakes/strawberry-cake/?internalSource=hub%20nav&referringId=1110&referringContentType=recipe%20hub&linkName=hub%20nav%20daughter&clickId=hub%20nav%202'>Strawberry Cake</a></li>
+                <li>Or Eat As Is</li>
+            </ul>
+        </div>
+
+    
+    </body>
+</html>

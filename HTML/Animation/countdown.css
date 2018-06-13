@@ -1,0 +1,125 @@
+img {
+    width: 200px;
+    opacity: 0;
+}
+
+@keyframes three {
+    0%{
+        opacity: .25
+    }
+    30% {
+        opacity: .50
+    }
+    60% {
+        opacity: .75
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#three {
+    animation-name: three;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    
+}
+
+@keyframes two {
+    0%{
+        opacity: 0
+    }
+    30% {
+        opacity: .50
+    }
+    60% {
+        opacity: .75
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#two {
+    animation-name: two;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+}
+
+@keyframes one {
+    0%{
+        opacity: 0
+    }
+    30% {
+        opacity: .50
+    }
+    60% {
+        opacity: .75
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#one {
+    animation-name: one;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 7s;
+}
+
+#dino1, #dino2 {
+    height: 200px;
+    opacity: 1;
+    border: 5px solid transparent;
+}
+
+@keyframes dino1 {
+    0% {
+        padding-left: 0%
+    } 
+    99% {
+        padding-left: 85%;
+        border: 5px solid transparent;
+    }
+    100% {
+        padding-left: 85%;
+        border: 5px solid red;
+    }
+}
+
+#dino1 {
+    animation-name: dino1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+    animation-duration: 1;
+    background-color: orange;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dino2 {
+    0% {
+        padding-left: 0%
+    } 
+    99% {
+        padding-left: 85%;
+        border: 5px solid transparent;
+    }
+    100% {
+        padding-left: 85%;
+        border: 5px solid green;
+    }
+}
+
+#dino2 {
+    animation-name: dino2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+    animation-duration: 1;
+    background-color: red;
+    animation-fill-mode: forwards;
+}

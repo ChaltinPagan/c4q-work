@@ -1,0 +1,55 @@
+<!--Email​ ​ and​ ​ Password​ ​ 1:​ ​ Build
+In​ ​ a ​ ​ file​ ​ login.html ​ , ​ ​ build​ ​ a ​ ​ page​ ​ with​ ​ a ​ ​ form​ ​ requesting​ ​ a ​ ​ user’s​ ​ email​ ​ address​ ​ and​ ​ password.
+Use​ ​ the​ ​ placeholder​ ​ attribute-->
+
+
+<!--Email​ ​ and​ ​ Password​ ​ 2:​ ​ Validate
+In​ ​ login.html ​ , ​ ​ have​ ​ the​ ​ form​ ​ validate​ ​ that​ ​ a ​ ​ user’s​ ​ email​ ​ address​ ​ is​ ​ valid​ ​ (contains​ ​ @ ​ ​ and​ ​ . ​ ​ as​ ​ in
+x@y.z ​ ) ​ ​ and​ ​ that​ ​ the​ ​ password​ ​ is​ ​ at​ ​ least​ ​ four​ ​ characters​ ​ long. -->
+
+
+<!--Email​ ​ and​ ​ Password​ ​ 3:​ ​ Hide
+It​ ​ is​ ​ common​ ​ to​ ​ hide​ ​ the​ ​ submit ​ ​ button​ ​ off​ ​ of​ ​ the​ ​ page,​ ​ where​ ​ the​ ​ user​ ​ cannot​ ​ see​ ​ it.​ ​ This​ ​ way,
+the​ ​ form​ ​ will​ ​ be​ ​ submitted​ ​ when​ ​ the​ ​ user​ ​ presses​ ​ enter,​ ​ but​ ​ there​ ​ is​ ​ no​ ​ ugly​ ​ button​ ​ on​ ​ an
+otherwise​ ​ beautiful​ ​ web​ ​ page.
+In​ ​ login.html ​ , ​ ​ use​ ​ CSS​ ​ to​ ​ hide​ ​ your​ ​ submit​ ​ button. -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Email and Passowrd</title>
+
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+
+    <style>
+        input[type=text] {
+            width: 20%;
+        }
+
+        input[type=submit] {
+            visibility: hidden;
+        }
+    </style>
+    <body>
+        <h1>Email and Password</h1>
+
+        <form>
+            <fieldset>
+                <legend>Form</legend>
+                <p>Name:</p>
+                <input type = 'text' name = 'name' placeholder = 'First and Last Name' id = 'box'>
+
+                <p>Email:</p>
+                <input type = 'text' name = 'email' placeholder = 'Email' pattern=".+\@.+\..+" id = 'box'>
+
+                <p>Password:</p>
+                <input type="text" name="password" placeholder="Password"  min="4" id = "box">
+
+                <p></p>
+                <input type="submit" value="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>

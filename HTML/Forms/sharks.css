@@ -1,0 +1,32 @@
+/* Shark​ ​ Quiz​ ​ 2:​ ​ Beauty​ ​ Contest
+Make​ ​ your​ ​ shark​ ​ quiz​ ​ page​ ​ as​ ​ beautiful​ ​ as​ ​ possible​ ​ with​ ​ an​ ​ external​ ​ stylesheet,​ s ​ harks.css ​ .
+*/
+
+
+
+body {
+    font-weight: bold;
+    color: white;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/39/Tiger_shark.jpg');
+    background-size: 100%;
+}
+
+textarea {
+    height: 200px;
+    width: 60%
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 200px;
+    height: 75px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}

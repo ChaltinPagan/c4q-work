@@ -1,0 +1,13 @@
+body {
+    
+}
+
+canvas {
+    width: 99vw;
+    /* border: 1px dashed black; */
+    height: 80vh;
+    margin: auto;
+    background-color: beige;
+    font-family: 'Schoolbell', "cursive";
+}
+

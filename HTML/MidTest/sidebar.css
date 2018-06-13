@@ -1,0 +1,56 @@
+body {
+    background-color: #1fcecb;
+    font-size: 18px;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px dotted #808080;
+    background-color: #ffffff;
+}
+
+#sidebar li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#sidebar a {
+    text-decoration: none;
+}
+
+#sidebar a:visited {
+    color: black;
+}
+
+#sidebar a:hover {
+    color: #ffb6b4;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+figure {
+    float: right;
+    
+}
+
+img {
+    width: 500px;
+}
+
+figcaption {
+    font-size: 12px;
+}
+
+#facts li {
+    font-family: 'Dosis', sans-serif;
+}
+
+#content {
+    margin-left: 210px;
+}

@@ -1,0 +1,47 @@
+<!--Count​ ​ Down 
+In​ ​ a ​ ​ file​ ​ countdown.html ​ , ​ ​ place​ ​ three​ ​ images​ ​ side​ ​ by​ ​ side:​ ​ an​ ​ image​ ​ of​ ​ the​ ​ numeral​ ​ 3,​ ​ an​ ​ image
+of​ ​ the​ ​ numeral​ ​ 2,​ ​ and​ ​ an​ ​ image​ ​ of​ ​ the​ ​ numeral​ ​ 1.​ ​ All​ ​ images​ ​ should​ ​ be​ ​ invisible​ ​ on​ ​ page​ ​ load​ ​ by
+setting​ ​ their​ ​ opacity:​​ ​ property​ ​ to​ ​ 1.​ ​ Using​ ​ an​ ​ external​ ​ stylesheet​ ​ called​ c ​ ountdown.css ​ , ​ ​ the
+@keyframe​​ ​ rule,​ ​ and​ ​ the​ ​ animation-name:​ , ​ ​ animation-duration:​ , ​ ​ and
+animation-delay:​​ ​ properties,​ ​ reveal​ ​ each​ ​ image,​ ​ one​ ​ at​ ​ a ​ ​ time,​ ​ in​ ​ this​ ​ order:​ ​ 3,​ ​ 2,​ ​ 1. 
+
+Dinosaur​ ​ Race​ ​ 1 
+In​ ​ countdown.html ​ ​ and​ ​ countdown.css ​ , ​ ​ place​ ​ two​ ​ images​ ​ of​ ​ separate​ ​ dinosaurs​ ​ below​ ​ the
+"countdown​ ​ clock".​ ​ After​ ​ the​ ​ series​ ​ of​ ​ countdown​ ​ clock​ ​ animations,​ ​ the​ ​ dinosaurs​ ​ should​ ​ move
+from​ ​ the​ ​ left​ ​ of​ ​ the​ ​ screen​ ​ to​ ​ the​ ​ right​ ​ of​ ​ the​ ​ screen.​ ​ The​ ​ bottom​ ​ dinosaur​ ​ should​ ​ move​ ​ across
+the​ ​ screen​ ​ more​ ​ quickly​ ​ than​ ​ the​ ​ top​ ​ dinosaur.​ ​ Use​ @
+keyframes​ , ​ ​ animation-name:​ , ​ ​ and
+animation-duration:​ .
+
+Dinosaur​ ​ Race​ ​ 2 
+Now,​ ​ the​ ​ top​ ​ dinosaur​ ​ should​ ​ leave​ ​ an​ ​ orange​ ​ trail​ ​ and​ ​ the​ ​ bottom​ ​ dinosaur​ ​ should​ ​ leave​ ​ a ​ ​ red
+trail.​ ​ Use​ ​ padding-left:​ .
+
+Dinosaur​ ​ Race​ ​ 3 
+When​ ​ the​ ​ "winning"​ ​ dinosaur​ ​ reaches​ ​ the​ ​ end​ ​ of​ ​ the​ ​ "race",​ ​ he​ ​ or​ ​ she​ ​ should​ ​ stay​ ​ at​ ​ the​ ​ right​ ​ of
+the​ ​ screen​ ​ and​ ​ get​ ​ a ​ ​ solid​ ​ green​ ​ border.​ ​ When​ ​ the​ ​ "losing"​ ​ dinosaur​ ​ finishes,​ ​ he​ ​ or​ ​ she​ ​ should
+also​ ​ stay​ ​ at​ ​ the​ ​ right​ ​ of​ ​ the​ ​ screen,​ ​ and​ ​ get​ ​ a ​ ​ red​ ​ border.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Countdown</title>
+
+        <link rel="stylesheet" type="text/css" href="countdown.css">
+    </head>
+
+    <body>
+
+        <img id ="three" src="https://cdn3.kainos.com/wp-content/uploads/2013/10/number3.png?e325c8">
+
+        <img id="two" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/NumberTwoInCircle.svg/2000px-NumberTwoInCircle.svg.png">
+
+        <img id="one" src="https://upload.wikimedia.org/wikipedia/commons/5/58/1NumberOneInCircle.png">
+        
+        <p><img id="dino1" src="https://cdn.pixabay.com/photo/2017/06/10/19/50/dino-2390610_960_720.png"></p>
+
+        <p><img id="dino2" src="http://moziru.com/images/blue-clipart-t-rex-9.png"></p>
+                
+    </body>
+</html>

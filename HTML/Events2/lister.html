@@ -1,0 +1,31 @@
+<!-- Lister​ ​ 1
+Using​ ​ the​ ​ files​ ​ lister.html ​ ​ and​ ​ lister.js ​ , ​ ​ build​ ​ a ​ ​ page​ ​ with​ ​ an​ ​ empty​ ​ unordered​ ​ list​ ​ and​ ​ a ​ ​ form
+containing​ ​ a ​ ​ single​ ​ text​ ​ input​ ​ field.​ ​ When​ ​ the​ ​ form​ ​ is​ ​ submitted,​ ​ the​ ​ page​ ​ should​ ​ not​ ​ reload.
+Instead,​ ​ use​ ​ document.createElement()​​ ​ to​ ​ build​ ​ a ​ ​ list​ ​ item​ ​ (li)​ ​ where​ ​ the​ ​ innerText​​ ​ is
+the​ ​ value​ ​ in​ ​ the​ ​ text​ ​ input​ ​ field.​ ​ Add​ ​ this​ ​ list​ ​ item​ ​ to​ ​ the​ ​ end​ ​ of​ ​ the​ ​ unordered​ ​ list.​ ​ Also,​ ​ reset​ ​ the
+value​ ​ of​ ​ the​ ​ text​ ​ input​ ​ field​ ​ to​ ​ an​ ​ empty​ ​ string. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lister 1</title>
+    </head>
+
+    <body>
+
+        <form>
+            <fieldset>
+                <legend>This is a form</legend>
+                <input id ="words" type="text" name="text" placeholder="Type here">
+                <input id="submit" type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        <p>This is a list:</p>
+        <ul>
+            <li></li>    
+        </ul>
+
+        <script src="lister.js"></script>
+    </body>
+</html>

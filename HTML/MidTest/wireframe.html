@@ -1,0 +1,74 @@
+<!--
+
+Wire Frame Monsters
+
+Attached is a document representing a web page about monsters.
+
+Assesment_Mock_Up_Monsters_Inc.pdfPreview the documentView in a new window
+
+Here is a link the the primary image (Links to an external site.)Links to an external site. on that page. Using your remaining time, and the files wireframe.html and wireframe.css, please duplicate as much of that page as you can.
+
+View in a new window
+
+Upload wireframe.html.
+ -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wire Frame Monsters</title>
+
+        <link rel="stylesheet" type="text/css" href="wireframe.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <div id="monster">
+             
+            <ul>
+                <li id="title"><a href="#">Monsters Inc.</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+
+            <img src="https://s10.postimg.org/jv6e3pc55/image.png">
+
+            <h1 id="tagline">We Bring Fear<br/>While You<br/>Sleep</h1>
+            <a id="contact" href="#">Contact Us</a>
+        </div>
+
+        <div id="subscribe">
+            <h2>Subscribe</h2>
+            <p>Coming soon to a bedroom near you</p>
+
+            <input type="text" name="name" placeholder="Name">
+            <br/>
+            <input type="email" name="email" placeholder="Email">
+            <br/>
+            <textarea placeholder="Comment"></textarea>
+            <br/>
+            <a id="submit" href="#">Submit</a>
+        </div>
+        
+        <div id="bottom">
+            <h2>Monsters, Inc</h2>
+            <p>We work</p>
+
+            <!-- Facebook icon by Icons8 -->
+            <img class="icon icons8-Facebook" width="26" height="26" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAtklEQVRIie3WwQ3CMAwF0D8CozBCNyEXZLNC0kM3oSOwSbJI7BHgABRQVFVAHKlSLfmal8hWbOARntV5khhYrjXSk8Rw0gPeI3AeawEFyPk8vcQKeWHqEEiSOUQSYY088z+I5NKzdoPT3WfNq0J5xExUhfxR902g4vCFpqoHWTWDOeQ5D3O1AYCetWsCzf00BlAe1lWjDdqgNUE/jvKvIJLUbjm538Zu3SomsWd1VTcikjS9BMANCHVQ3NEVq1IAAAAASUVORK5CYII=">
+
+            <!-- Twitter icon by Icons8 -->
+            <img class="icon icons8-Twitter" width="26" height="26" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABZUlEQVRIie2Vy23DMAyGNUJGyAgZwSN4g/oSiz21x5gyYG+QbmBv0GyQbFBvkCxA0hu0B7/jRyTEQA8tAQI2LOMTf/6ilPqP34gYxEOgDDV/GeAzAmUxiNdfg3vZtS8HkC2CBC4Q1PRhgL+nEkES1PJmgM9G86n7CSitF1jBECSYgwxSc5EGsjmAbJVSShmgvPtIxzSQzXI1XNqAaklvrXxNRV3pfL3XuoXsZWdVTQUqBz2KQvFnd/QqL/0KYxDPFhSF4o92ajQXj2RAzZ8IlNmCRqpEofhRKP4jmGuOen3fo7VyJJuL7tZGAL5MWxb4sioslPdJUBrIxmg+rQVqD+lkVXvZIUiCwNfnQJTPQtY0xWI1PfmesjgCpYuQAaw/+1xSc2EFuQc6SVlPaidIZQrKVoV0TpPEaDrWo92uH5pL654oVU8GhzNU3UeUP3TXXDRXugHKEfhST4tb84xA6eTo/5PxA05g1fqYWyZLAAAAAElFTkSuQmCC">
+
+            <!-- Instagram icon by Icons8 -->
+            <img class="icon icons8-Instagram" width="26" height="26" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADHklEQVRoge1a0XXqMAzNCIzACIzQDcoGzQ+R+lU+Qe45zQbtBrABbAAbwAawgKVuwPtIbAwvCQ5xmrSHe05+iiPrWjeWLDeKHvilmKEMCeRNIW8IeKeQT208ue0NgbzNUIbBCLyjPCnkTVuOezwbmsioEQkF+tNZqW+FejlPZNzYcAVoIqN5ImOFepnNmRMC/VnbWBrLwESBgL8JdZrGMmjB75t+EOrUIbSp5ccFiRZX3xc0kZFLxu8l0F+GRBdRKEMay8CQIdBflYPzD7s3kbiGG5lK/6ykUKc/5149EOq0UmIzlGEfJPWO8kTIB0I+vKM8Xf/uSqwwz6hEphlTvWzf3XIQ8sFu+ciHojEK9VIhn1Qi0yIDW4V8micybt3bClzkDuRj0Zgsz/CJkLdFBnY3PyIPmFKGgFduKUPAu+xv1aVHvuEcFfKxSFpRlH30xuZ/P5oJGxFAvfCuqVAvmtRSpf42ITJPZKyA5eyoXhJK7EaXJjIilNjqG/mkgOVeKQcnkjlnHVv7rPIMZaiA1+foSFx33qBEzEdXuoPccsbulPU3mWBE8lWVe0nYeQ0ZYKmTv4IRsVoHXvu+U2rLysw/hwUhYqqA0uxaE/fYC0KkjSrARsVTpmGI5JPes9uUwe5+nlINQiRUFXBhsypbFyBMRBpWASHsPohcjAXetyUtBbz38uHxsbtj/8r2+2cSYjY+K1EIeOXvcjEIeNVJiRJF5iSYH0sDFI11mx6tlfEE8lbn3SiKory7320Zb51xDlYEvPI9WJ3l1IODlcE8kbHb/SDUC/UqL9dHXfUqL+65noC/e3PUNch2Huc8fvPRyyaNwHIigbL1DGWoEpkq4LWxaTK2Al6rRKZNt+zKKqAvDTofVDbo+tIy9UFly9Rm15pNgJ9GGsvAND1KJWrk9RuuFQplZWAuehSw9PWix0Tjpn/m6q1vEnMldfPqzcBIrC+RuYhElaSukV0LO2RQPrq7npYPl8RdfliZWUJ6oUCe2/6HAQXynM117vB7y6nKsI1OBw8hb4MunCk9CHl7UXqEfoD3hLwNUco80CX+AQIZAoJwvzWkAAAAAElFTkSuQmCC">
+
+            <br/>
+            <a id="contact" href="#">Contact Us</a>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!-- CONVERSION API
+
+At http://codyhess.com:9000, there is an API that converts numbers to base-2 (binary), base-10 (decimal), and base-16 (hexadecimal). API documentation and hints are available at that link.
+
+Use the files conversion-<yourname>.html, conversion-<yourname>.css, and conversion-<yourname>.js to build a page that meets the following specifications:
+
+HTML
+
+    has a header with text "Number Base Converter"
+    has a text input field
+    has a button "convert from binary"
+    has a button "convert from decimal"
+    has a button "convert from hexadecimal"
+    has a paragraph with text "Original Number:"
+    has a paragraph with text "Original Base:"
+    has a paragraph with text "As Binary"
+    has a paragraph with text "As Decimal"
+    has a paragraph with text "As Hexadecimal"
+
+JavaScript
+
+    clicking any button uses the API to fetch appropriate conversions for the number in the input field
+        all paragraph elements are updated with appropriate data
+        the input field is emptied
+
+CSS
+
+    all text uses the font "Nunito" (you will have to import this)
+        this includes button text and the text input field
+    buttons are below the input field (this can be done with HTML) 
+    the "Original Number" and "Original Base" paragraphs have a smaller font than the other 3 paragraphs
+    the header is underlined
+
+Upload conversion-<yourname>.html. -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chaltin's Conversion API</title>
+
+        <link rel="stylesheet" type="text/css" href="conversion-chaltin.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+
+        <h1>Number Base Converter</h1>
+
+        <textarea></textarea>
+        <p></p>
+        <button id="binaryB">Convert From Binary</button>
+        <p></p>
+        <button id="decimalB">Convert From Decimal</button>
+        <p></p>
+        <button id="hexB">Convert From Hexadecimal</button>
+        <p id="number">Original Number: </p>
+        <p id="base">Original Base: </p>
+        <p id="binaryP">As Binary: </p>
+        <p id="decimalP">As Decimal: </p>
+        <p id="hexP">As Hexadecimal: </p>
+
+        <script src="conversion-chaltin.js"></script>
+    </body>
+</html>

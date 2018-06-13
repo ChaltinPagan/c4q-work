@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+#one {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-top: 27.5%;
+    margin-left: 7.5%;
+    opacity: 0.5;
+}
+
+#two {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-top: 26%;
+    margin-left: 6%;
+    z-index: -1;
+}
+
+#three {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    margin-top: 24.5%;
+    margin-left: 4.5%;
+    z-index: -2;
+}
+
+#four {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    margin-top: 23%;
+    margin-left: 3%;
+    z-index: -3;
+}
+
+#five {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin-top: 21.5%;
+    margin-left: 1.5%;
+    z-index: -4;
+    opacity: 0.5;
+}
+
+#six {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin-top: 20%;
+    z-index: -5;
+}

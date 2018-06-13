@@ -1,0 +1,49 @@
+<!-- Bubble​ ​ Factory
+Using​ ​ the​ ​ files​ ​ bubble-factory.html ​ ​ and​ ​ bubble-factory.js , ​ ​ ​ build​ ​ a ​ ​ page​ ​ with​ ​ a ​ ​ single​ ​ button​ ​ that
+reads,​ ​ "Build​ ​ a ​ ​ Bubble".​ ​ Search​ ​ the​ ​ internet​ ​ for​ ​ an​ ​ image​ ​ of​ ​ a ​ ​ bubble.​ ​ When​ ​ the​ ​ button​ ​ is
+clicked,​ ​ use​ ​ document.createElement()​​ ​ to​ ​ build​ ​ an​ ​ img​ ​ element​ ​ where​ ​ src​ ​ is​ ​ a ​ ​ link​ ​ to​ ​ that
+bubble​ ​ and​ ​ add​ ​ it​ ​ to​ ​ the​ ​ page.​ ​ (This​ ​ exercise​ ​ is​ ​ more​ ​ fun​ ​ with​ ​ smaller​ ​ bubbles.) -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bubble Factory</title>
+    </head>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        input[type=submit] {
+            /* height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            background-color: aquamarine;
+            color: blue;
+            text-align: center;
+            font-size: 20px;
+            border: 2px solid blue; */
+            position: fixed;
+            /* top: 10px;
+            left: 10px; */
+        }
+
+        img {
+            /* position: relative; */
+            /* visibility: hidden; */
+            width: 20%;
+        }
+    </style>
+
+    <body id="body">
+
+        <input id="submit" type="submit" value="Build A Bubble">
+
+        <!-- <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652_960_720.png"> -->
+
+        <script src="bubble-factory.js"></script>
+
+    </body>
+</html>

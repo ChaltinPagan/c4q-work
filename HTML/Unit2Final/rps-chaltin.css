@@ -1,0 +1,9 @@
+body {
+    background-color: #808080;
+    text-align: center;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+button, input {
+    font-family: 'Bubblegum Sans', cursive;
+}

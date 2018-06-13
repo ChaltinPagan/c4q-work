@@ -1,0 +1,35 @@
+<!-- Growing​ ​ Arrow
+Write​ ​ a ​ ​ page​ ​ with​ ​ a ​ ​ single​ ​ empty​ ​ paragraph​ ​ element.​ ​ After​ ​ 100​ ​ milliseconds,​ ​ draw​ ​ an
+arrow​ ​ like​ ​ this:​ ​ ->​ . ​ ​ After​ ​ another​ ​ 100​ ​ milliseconds,​ ​ add​ ​ another​ ​ segment​ ​ to​ ​ the​ ​ arrow:
+ . ​ ​ After​ ​ another ​ ​ 100​ ​ milliseconds,​ ​ add​ ​ another​ ​ segment​ ​ to​ ​ the​ ​ arrow:​ ​ ->​ .
+The​ ​ arrow​ ​ should​ ​ continue​ ​ growing​ ​ indefinitely.​ ​ Use​ ​ .setInterval()​ . -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Growing Arrow</title>
+    </head>
+
+    <body>
+        <h1>Growing Arrow</h1>
+
+        <p></p>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+                p = document.querySelector("p");
+
+                p.innerText = "->";
+
+                window.setInterval( function() {
+                    dash = "-"
+                    p.innerText = dash + p.innerText
+                    
+                }, 500);
+
+                
+            })
+        </script>
+    </body>
+</html>

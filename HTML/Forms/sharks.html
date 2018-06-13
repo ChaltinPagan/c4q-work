@@ -1,0 +1,57 @@
+<!-- Shark​ ​ Quiz​ ​ 1:​ ​ Questions
+In​ ​ a ​ ​ new​ ​ file,​ ​ sharks.html ​ , ​ ​ build​ ​ a ​ ​ test​ ​ about​ ​ sharks.​ ​ The​ ​ first​ ​ portion​ ​ of​ ​ the​ ​ test​ ​ is​ ​ three​ ​ multiple
+choice​ ​ questions,​ ​ with​ ​ radio​ ​ buttons.​ ​ The​ ​ second​ ​ portion​ ​ is​ ​ an​ ​ essay​ ​ question,​ ​ using​ ​ a ​ ​ textarea.
+Each​ ​ question​ ​ will​ ​ have​ ​ its​ ​ own​ ​ fieldset​ ​ and​ ​ legend.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shark Quiz</title>   
+        
+        <link rel="stylesheet" type="text/css" href="sharks.css">
+    </head>   
+    
+    <body>
+        <div>
+        <h1>Shark Quiz!</h1>
+
+        <form>
+            <fieldset>
+            <legend>1. Sharks are what kind of vertebrate?</legend>
+            
+                <input type="radio" name="vertebrate" value="fish">Fish</br>
+                <input type="radio" name="vertebrate" value="mammal">Mammal</br>
+                <input type="radio" name="vertebrate" value="reptile">Reptile</br>
+            
+            </fieldset>
+            &nbsp;
+            <fieldset>
+            <legend>2. Sharks eat what kind of diet?</legend>
+                <input type="radio" name="diet" value="herbivore">Herbivore</br>
+                <input type="radio" name="diet" value="carnivore">Carnivore</br>
+                <input type="radio" name="diet" value="omnivore">Omnivore</br>
+
+            </fieldset>
+            &nbsp;
+
+            <fieldset>
+            <legend>3. Sharks live in the _____.</legend>
+                <input type="radio" name="live" value="sky">Sky</br>
+                <input type="radio" name="live" value="sea">Sea</br>
+                <input type="radio" name="live" value="land">Land</br>
+
+            </fieldset>
+            &nbsp;
+            <fieldset>
+                <legend>4. Essay. Write a shark story. It can be true or from your imagination.</legend>
+                    <textarea></textarea>
+        
+                </fieldset>
+            <p>
+            <input type="submit" value="submit">
+            </p>
+        </form>
+        
+        </div>
+    </body>
+</html>

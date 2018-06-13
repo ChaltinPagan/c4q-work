@@ -1,0 +1,59 @@
+<!-- Ninja Facts
+
+Using the files ninja-<yourname>.html, ninja-<yourname>.css, and ninja-<yourname>.js, build a page that meets the following specifications:
+
+HTML
+
+    has header "Ninja Facts"
+    has form with input field, submit button
+    has empty ordered list
+
+JavaScript
+
+    clicking submit will:
+        not refresh the page
+        build an li element with document.createElement
+        set the text of the new element to the value of the text input field
+        append the new element to the ordered list
+        clear the value of the text input field
+    clicking the text of a list item will:
+        give the element a style property of text-transform: uppercase
+
+CSS
+
+    page has black background and white text
+    font for all elements is Neucha
+    hovering an element with the mouse will:
+        use :hover pseudo-class to give the element yellow background and red text
+
+Upload ninja-<yourname>.html. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ninja Facts</title>
+
+        <link rel="stylesheet" type="text/css" href="ninja-chaltin.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+
+        <h1>Ninja Facts</h1>
+
+        <form>
+            <fieldset>
+                <legend>Form</legend>
+                <input type="text" name="text" placeholder="Write here.">
+                <button>Submit</button>
+            </fieldset>
+        </form>
+
+        <ol></ol>
+
+        <script src="ninja-chaltin.js"></script>
+    </body>
+
+</html>

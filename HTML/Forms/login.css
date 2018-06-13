@@ -1,0 +1,11 @@
+/*Email​ ​ and​ ​ Password​ ​ 4:​ ​ Beautify
+In​ ​ an​ ​ external​ ​ stylesheet,​ ​ login.css ​ , ​ ​ use​ ​ CSS​ ​ pseudo-classes​ ​ to​ ​ give​ ​ a ​ ​ green​ ​ border​ ​ to​ ​ input
+elements​ ​ with​ ​ valid​ ​ input,​ ​ and​ ​ a ​ ​ yellow​ ​ background​ ​ to​ ​ input​ ​ elements​ ​ that​ ​ are​ f ​ ocused ​ . */
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:focus {
+    background-color: yellow;
+}

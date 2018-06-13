@@ -1,0 +1,34 @@
+<!-- Local​ ​ Storage​ ​ Locker
+Using​ ​ the​ ​ files​ ​ ls-locker.html ​ ​ and​ ​ ls-locker.js ​ , ​ ​ build​ ​ a ​ ​ page​ ​ that​ ​ includes​ ​ a ​ ​ textarea
+element.​ ​ When​ ​ a ​ ​ user​ ​ types​ ​ into​ ​ the​ ​ textarea​ , ​ ​ the​ ​ value​ ​ of​ ​ the​ ​ text​ ​ should​ ​ be​ ​ saved
+with​ ​ window.localStorage.setItem()​ .
+Whenever​ ​ the​ ​ page​ ​ is​ ​ refreshed,​ ​ the​ ​ text​ ​ inside​ ​ the​ ​ textarea​​ ​ should​ ​ be​ ​ populated​ ​ by
+the​ ​ user's​ ​ previous​ ​ input​ ​ with​ ​ window.localStorage.getItem()​ .
+HINT:​ ​ When​ ​ the​ ​ value​ ​ of​ ​ a ​ ​ textarea​​ ​ is​ ​ changed,​ ​ an​ ​ event​ ​ called​ ​ input ​ ​ is​ ​ triggered. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage Locker</title>
+
+        <style>
+            body {
+                text-align: center;
+            }
+
+            textarea {
+                height: 300px;
+                width: 500px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Local Storage Locker</h1>
+
+        <textarea></textarea>
+
+        <script src="ls-locker.js"></script>
+    </body>
+</html>

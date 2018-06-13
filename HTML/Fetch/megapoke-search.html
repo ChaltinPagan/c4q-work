@@ -1,0 +1,45 @@
+<!-- Megapoke​ ​ 3
+Write​ ​ a ​ ​ file​ ​ megapoke-search.html ​ . ​ ​ This​ ​ page​ ​ will​ ​ have​ ​ a ​ ​ heading​ ​ "Megapoke​ ​ Search",
+as​ ​ well​ ​ as​ ​ a ​ ​ text​ ​ input​ ​ field​ ​ and​ ​ three​ ​ buttons​ ​ labeled​ ​ "abilities",​ ​ "characteristics",​ ​ and
+"pokeathalon".
+When​ ​ a ​ ​ user​ ​ clicks​ ​ "abilities",​ ​ use​ ​ fetch()​ ​ and​ ​ the​ ​ Pokeapi​ ​ to​ ​ find​ ​ ability​ ​ data​ ​ for
+whatever​ ​ pokemon​ ​ name​ ​ was​ ​ typed​ ​ into​ ​ the​ ​ input​ ​ field,​ ​ and​ ​ insert​ ​ relevant​ ​ results​ ​ from
+that​ ​ request​ ​ into​ ​ the​ ​ DOM.
+When​ ​ a ​ ​ user​ ​ clicks​ ​ "characteristics",​ ​ use​ ​ fetch()​ ​ and​ ​ the​ ​ Pokeapi​ ​ to​ ​ find​ ​ characteristics
+data​ ​ for​ ​ whatever​ ​ pokemon​ ​ name​ ​ was​ ​ typed​ ​ into​ ​ the​ ​ input​ ​ field,​ ​ and​ ​ insert​ ​ relevant
+results​ ​ from​ ​ that​ ​ request​ ​ into​ ​ the​ ​ DOM.
+When​ ​ a ​ ​ user​ ​ clicks​ ​ "pokeathlon",​ ​ use​ ​ fetch()​ ​ and​ ​ the​ ​ Pokeapi​ ​ to​ ​ find​ ​ pokeathlon​ ​ data​ ​ for
+whatever​ ​ pokemon​ ​ name​ ​ was​ ​ typed​ ​ into​ ​ the​ ​ input​ ​ field,​ ​ and​ ​ insert​ ​ relevant​ ​ results​ ​ from
+that​ ​ request​ ​ into​ ​ the​ ​ DOM.
+If​ ​ you​ ​ cannot​ ​ fetch​ ​ data​ ​ for​ ​ the​ ​ value​ ​ in​ ​ the​ ​ input​ ​ field,​ ​ insert​ ​ a ​ ​ relevant​ ​ error​ ​ message
+into​ ​ the​ ​ DOM.
+Include​ ​ a ​ ​ link​ ​ back​ ​ to​ ​ megapoke-index.html ​ . -->
+
+<!-- For now, instead of *characteristics* and *pokeathlon*, make "height/weight" and "image" buttons. -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Megapoke Search</title>
+
+        <link rel="stylesheet" type="text/css" href="megapoke.css">
+    </head>
+
+    <body>
+
+        <h1>Megapoke Search</h1>
+
+        <input type="text" placeholder="pokemon">
+        <p></p>
+        <br/>
+        <button id="ability">Ability</button>
+        <button id="character">Characteristics</button>
+        <button id="pokeathlon">Pokeathlon</button>
+
+        <p id="result"></p>
+
+        <script src="megapoke.js"></script>
+
+    </body>
+</html>

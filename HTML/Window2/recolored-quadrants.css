@@ -1,0 +1,47 @@
+
+div {
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    border: 2px dotted black;
+}
+
+#topLeft {
+    top: 0;
+    left: 0;
+    background-color: red;
+} 
+
+#topRight {
+    top: 0;
+    right: 0; 
+    background-color: blue;
+}
+
+#bottomLeft {
+    bottom: 0;
+    left: 0;
+    background-color: green;
+}
+
+#bottomRight {
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+}
+
+#bgRed {
+
+}
+
+#bgBlue {
+
+}
+
+#bgGreen {
+
+}
+
+#bgYellow {
+
+}

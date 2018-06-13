@@ -1,0 +1,19 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+textarea {
+    font-family: 'Nunito', sans-serif;
+}
+
+button {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+#base, #number {
+    font-size: 14px;
+}

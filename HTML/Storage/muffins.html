@@ -1,0 +1,31 @@
+<!-- Muffin​ ​ Cooking
+Using​ ​ the​ ​ files​ ​ muffins.html ​ ​ and​ ​ muffins.js ​ , ​ ​ build​ ​ a ​ ​ page​ ​ with​ ​ two​ ​ buttons.​ ​ One​ ​ button
+that​ ​ says​ ​ "Eat​ ​ a ​ ​ Muffin"​ ​ and​ ​ another​ ​ button​ ​ that​ ​ says​ ​ "Bake​ ​ Muffins".​ ​ Include​ ​ an​ ​ h1
+element​ ​ that​ ​ says​ ​ "Muffin​ ​ Count:​ ​ 10".
+When​ ​ a ​ ​ user​ ​ clicks​ ​ "Eat​ ​ a ​ ​ Muffin",​ ​ the​ ​ muffin​ ​ count​ ​ should​ ​ be​ ​ reduced​ ​ by​ ​ 1.​ ​ When​ ​ a
+user​ ​ clicks​ ​ "Bake​ ​ Muffins"​ ​ the​ ​ muffin​ ​ count​ ​ should​ ​ be​ ​ increased​ ​ by​ ​ 5.​ ​ Every​ ​ time​ ​ the
+muffin​ ​ count​ ​ is​ ​ changed,​ ​ the​ ​ count​ ​ should​ ​ be​ ​ saved​ ​ with
+window.localStorage.setItem()​ .
+Whenever​ ​ the​ ​ page​ ​ is​ ​ refreshed,​ ​ the​ ​ value​ ​ of​ ​ the​ ​ muffin​ ​ count​ ​ header​ ​ should​ ​ be​ ​ set​ ​ to
+its​ ​ previous​ ​ value​ ​ with​ ​ window.localStorage.getItem()​ . -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Muffin Cooking</title>
+
+    </head>
+
+    <body>
+        <!-- <h1>Muffin Cooking</h1> -->
+
+        <input id="eat" type="submit" value="Eat A Muffin">
+
+        <input id="bake" type="submit" value="Bake Muffins">
+
+        <h1 id="muffin">Muffin Count: 10</h1>
+        
+
+        <script src="muffins.js"></script>
+    </body>
+</html>

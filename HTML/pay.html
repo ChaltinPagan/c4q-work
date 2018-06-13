@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>Button Example Code</title>
+
+<!-- START META TAG SECTION -->
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="Content-Language" content="en">
+<!-- END META TAG SECTION -->
+
+
+<!-- START OF SCRIPT -->
+<SCRIPT language=javascript>
+function CalculateOrder(form)
+{
+
+if (form.item_name_1.value == "US Membership")
+ {
+ form.amount_1.value = 75.00;
+ form.shipping_1.value = 0.00;
+ }
+ 
+if (form.item_name_1.value == "International Membership")
+ {
+ form.amount_1.value = 85.00;
+ form.shipping_1.value = 0.00;
+ } 
+ 
+if (form.item_name_1.value == "Graduate Membership")
+ {
+ form.amount_1.value = 45.00;
+ form.shipping_1.value = 0.00;
+ }
+
+if (form.item_name_1.value == "Retired Membership")
+ {
+ form.amount_1.value = 45.00;
+ form.shipping_1.value = 0.00;
+ }
+} 
+</SCRIPT>
+<!-- END OF SCRIPT -->
+
+
+</head>
+
+<body>
+
+<!-- START SAMPLE CODE SECTION -->
+
+
+<!-- PARAGRAPH 1 -->
+Upload Method Examples
+
+<br><br>
+
+Utilizing a Script.
+
+<br><br><br>
+
+<!-- Start of Form -->
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+Widget Membership - Join Today
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="upload" value="1">
+<!-- Replace "business" value with your PayPal Email Address or Account ID -->
+<input type="hidden" name="AP4J38G93L6SN" value="AP4J38G93L6SN">
+<!-- Replace value with the web page you want the customer to return to after a successful transaction -->
+<input type="hidden" name="return" value="http://www.yourwebsite.com/ThankYou.html">
+<!-- Replace value with the web page you want the customer to return to after item cancellation -->
+<input type="hidden" name="cancel_return" value="www.yourwebsite.com/Cancel.html">
+<input type="hidden" name="amount_1">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="on0_1" value="Includes">
+<input type="hidden" name="os0_1" value="Free subscription to The Widget Monthly Magazine">
+<input type="hidden" name="button_subtype" value="products">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="cn" value="Add special instructions to the seller:">
+<input type="hidden" name="bn" value="PP-ShopCartBF:btn_paynowCC_LG.gif:NonHosted">
+
+<br><br>
+Membership Category:&#160;&#160; 
+<select name="item_name_1">
+<option value="US Membership" selected>United States - $75</option>
+<option value="International Membership">International - $85</option>
+<option value="Graduate Membership">Graduate - $45</option>
+<option value="Retired Membership">Retired - $45</option>
+</select> 
+<br><br>
+Membership includes a subscription to The Widget Monthly Magazine
+<br><br>
+Add a one-time donation to the Widget Scholarship Fund:&#160;&#160;
+<input type="hidden" name="item_name_2" value="Scholarship Donation">
+<input type="textbox" name="amount_2" value="0.00">
+<input type="hidden" name="shipping_2" value="0.00">
+
+<input type="hidden" name="shipping_3" value="0.00">
+<input type="hidden" name="item_name_3" value="Processing Fee">
+<input type="hidden" name="amount_3" value="3.00">
+<input type="hidden" name="on0_3" value="Note">
+<input type="hidden" name="os0_3" value="Processing Fee is Non-Refundable">
+ 
+<br><br> 
+All online orders are subject to a non-refundable $3.00 Processing Fee. 
+
+<br><br>
+<input type="reset" name="reset" value="Clear Selections">
+
+<br><br>
+<input name="myform" id="myform" onclick=CalculateOrder(this.form) type=image alt="Make payments with PayPal - it's fast, free and secure!" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border=0 name="submit">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<!-- End of Form -->
+
+
+<!-- END BUTTON EXAMPLES -->
+
+
+
+<!-- END SAMPLE CODE SECTION -->
+
+<br><br><br><br>
+<hr align="left" width="50%" noshade>
+<br><br>
+NOTES:
+<br>
+In order to test the code, you must replace the &quot;business&quot; value variable with your PayPal Email Address or Account ID.
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!-- Homework:​ ​ Basic​ ​ Calculator
+At​ ​ http://c4q.codyhess.com/hw6​ , ​ ​ you'll​ ​ find​ ​ three​ ​ files:​ ​ calc.html ​ , ​ ​ calc.css ​ , ​ ​ and​ ​ calc.js ​ .
+Together,​ ​ the​ ​ files​ ​ present​ ​ an​ ​ incomplete​ ​ implementation​ ​ of​ ​ a ​ ​ basic​ ​ calculator​ ​ -
+everything​ ​ works​ ​ but​ ​ the​ ​ C ​ ​ (clear)​ ​ and​ ​ = ​ ​ (result)​ ​ buttons.
+Edit​ ​ calc.js ​ ​ so​ ​ that​ ​ the​ ​ = ​ ​ button​ ​ replaces​ ​ the​ ​ text​ ​ in​ ​ outputDiv​​ ​ with​ ​ the​ ​ result​ ​ of​ ​ the
+calculated​ ​ input.
+Edit​ ​ calc.js ​ ​ so​ ​ that​ ​ the​ ​ C ​ ​ button​ ​ clears​ ​ the​ ​ text​ ​ of​ ​ outputDiv​ .
+Edit​ ​ calc.css ​ ​ so​ ​ that​ ​ the​ ​ page​ ​ uses​ ​ a ​ ​ calculator-specific​ ​ font​ ​ like​ ​ Orbitron​ .
+Edit​ ​ calc.css ​ ​ so​ ​ that​ ​ the​ ​ text​ ​ of​ ​ outputDiv​​ ​ is​ ​ right-aligned.
+Generate​ ​ a ​ ​ favicon​​ ​ and​ ​ link​ ​ to​ ​ it​ ​ from​ ​ calc.html ​ . -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link href="calc.css" type="text/css"
+                          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+
+    <link rel="shortcut icon" 
+    type="image/png" 
+    href="https://lh3.googleusercontent.com/FpQXb3fjRebih0ZMiuXK4NuWARD4zyG-5un8UYDoM0ha7IBOE9iqBtZYbxpV2kKB6w=w300">
+    <script src="calc.js"></script>
+  </head>
+  <body>
+    <div id="calc">
+      <div id="output"></div>
+      <div class="row">
+        <div id="7" class="key">7</div>
+        <div id="8" class="key">8</div>
+        <div id="9" class="key">9</div>
+        <div id="add" class="key">+</div>
+      </div>
+      <div class="row">
+        <div id="4" class="key">4</div>
+        <div id="5" class="key">5</div>
+        <div id="6" class="key">6</div>
+        <div id="sub" class="key">-</div>
+      </div>
+      <div class="row">
+        <div id="1" class="key">1</div>
+        <div id="2" class="key">2</div>
+        <div id="3" class="key">3</div>
+        <div id="mul" class="key">*</div>
+      </div>
+      <div class="row">
+        <div id="clr" class="key">C</div>
+        <div id="0" class="key">0</div>
+        <div id="eq" class="key">=</div>
+        <div id="div" class="key">/</div>
+      </div>
+    </div>
+  </body>
+</html>

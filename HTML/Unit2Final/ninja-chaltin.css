@@ -1,0 +1,14 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Neucha', cursive;
+}
+
+input, button {
+    font-family: 'Neucha', cursive;
+}
+
+li:hover {
+    background-color: #FFFF00;
+    color: #FF0000;
+}

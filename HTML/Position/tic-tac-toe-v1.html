@@ -1,0 +1,92 @@
+<!--
+
+Tic Tac Toe
+
+Here is a Tic Tac Toe board.tic-tac-toe-board.pngView in a new window
+
+Here is a cool letter X. cool-letter-x.jpgView in a new window
+
+Here is a cool letter O. cool-letter-o.jpgView in a new window
+
+Horizontally center the board on the page.
+
+Use absolute positioning to place X's and O's on the board in the following pattern:
+O 		X
+	X 	O
+X 	O 	X
+
+You may adjust the height and width of board, X, and O as you need. You may use HTML, CSS, or if you prefer, you may literally resize the image using an image editor.
+
+Save the page as tic-tac-toe-v1.html and upload the file. You do not have to upload the image files.
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <style>
+            body {
+                text-align: center;
+                margin: 10% auto;
+            }
+
+            
+            #board img {
+                height: 500px;
+                width: 500px;
+                /*margin: 200px;*/
+                position: absolute;
+            }
+
+            #x img {
+                height: 80 px;
+                width: 80px;
+                position: absolute;
+                top: 25%;
+                left: 55%;
+                border: 1px solid black;
+            }
+
+            #x2 img {
+                height: 80px;
+                position: absolute;
+                top: 500px;
+                right: 800px;
+            }
+
+            #oh img {
+                height: 80px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id = 'board'>
+            <img src = 'https://i.pinimg.com/736x/d2/ff/11/d2ff1157bd1910c3b7a66ff9bb20f48d--tic-tac-toe-template-tic-tac-toe-board.jpg'>
+        </div>
+
+        <div id = 'x'>
+            <img src = 'http://www.dreamincode.net/forums/uploads/post-97990-1260678617.png'>
+        </div>
+        <!--
+        <div id = 'x2'>
+                <img src = 'http://www.dreamincode.net/forums/uploads/post-97990-1260678617.png'>
+            </div>
+
+            <div id = 'x3'>
+                    <img src = 'http://www.dreamincode.net/forums/uploads/post-97990-1260678617.png'>
+                </div>
+
+                <div id = 'x4'>
+                        <img src = 'http://www.dreamincode.net/forums/uploads/post-97990-1260678617.png'>
+                    </div>
+                -->
+
+        <div id = 'oh'>
+            <img src = 'https://raw.githubusercontent.com/mikegagnon/gamer/master/tic-tac-toe/img/player-o.png'>
+        </div>
+
+   
+    
+    </body>
+</html>

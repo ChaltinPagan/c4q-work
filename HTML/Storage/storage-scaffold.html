@@ -1,0 +1,32 @@
+<body>
+    <form>
+        <input type="text" id="inp">
+        <input type="submit">
+    </form>
+    <button id="clear">CLEAR</button>
+    <p id="myP"></p>
+    
+    <script>
+        var inp = null;
+        var myP = null;
+        var clear = null;
+        document.addEventListener("DOMContentLoaded", (event) => {
+            inp = document.getElementById("inp");
+            myP = document.getElementById("myP");
+            clear = document.getElementById("clear");
+
+            myP.innerText = window.localStorage.getItem("words");
+
+            document.addEventListener("submit", (event) => {
+                event.preventDefault();
+                myP.innerText += inp.value;
+                window.localStorage.setItem("words", myP.innerText);
+            });
+
+            clear.addEventListener("click",(event) => {
+                window.localStorage.clear();
+                myP.innerText = "";
+            });
+        });
+    </script>
+</body>

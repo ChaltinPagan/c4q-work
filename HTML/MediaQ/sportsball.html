@@ -1,0 +1,115 @@
+<!--
+
+Sportsball
+
+Build a page about your favorite sports team or athlete where all CSS is inside one of three @media queries: a query targeting <961px, a query targeting >960px and <1367px, and a query targeting >1366px.
+
+Smaller devices display no images and have a white background with black text. Medium sized devices display a logo and have black background with white text. Large devices display a logo and one additional image and have yellow background with purple text.
+
+Save the page as sportsball.html and upload the file.
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sportsball</title>
+        <style>
+            
+
+            @media (max-width: 960px) {
+                body {
+                width: 80%;
+                border: 2px orange solid;
+                margin: 2em auto;
+                padding: 1em;
+                background-color: white;
+                color: black;
+                };
+                
+            }
+
+            @media (max-width: 960px) {
+            
+                img { 
+                    display: none;
+                }
+            }
+
+            @media (min-width: 961px) and (max-width: 1366px) {
+                body {
+                width: 80%;
+                border: 2px green dotted;
+                margin: 2em auto;
+                padding: 1em;
+                background-color: black;
+                color: white;
+                }
+            }
+
+            @media (min-width: 961px) and (max-width: 1366px) {
+               
+                #two {
+                    display: none;
+                }
+            }
+
+            @media (min-width: 1367px) {
+                body {
+                width: 80%;
+                border: 2px blue solid;
+                margin: 2em auto;
+                padding: 1em;
+                background-color: yellow;
+                color: purple;
+                }
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div id = 'content'>
+            <h1>Baseball Lorem Ipsum</h1>
+
+            <img src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Baseball.svg/520px-Baseball.svg.png'>
+
+            <p>
+                
+
+Baseball ipsum dolor sit amet pastime play rubber game perfect game. Earned run on deck squeeze bandbox left on base, knuckle right field. Cellar assist no decision rhubarb full count cy young away world series. Left on base second base dribbler wild pitch warning track corner fair outfield. World series rookie sacrifice rainout fenway red sox center fielder cracker jack. Yankees diamond unearned run earned run petey manager range golden sombrero leadoff.
+</p>
+<p>
+Gap on deck baseline contact sacrifice foul off-speed left on base. Base on balls sacrifice fly plate disabled list rally sacrifice bunt grass. Wins wins stance first baseman rookie series glove interleague. Squeeze flyout right field bat double switch, run foul line warning track batter's box. Stretch leadoff outfield pickoff corner gold glove cracker jack. Game contact catcher cycle swing loogy triple play fan.
+</p>
+<p>
+Leadoff moneyball fair pinch runner plunked flyout plunked rally. Wrigley bases loaded curve small ball backstop dead red earned run run right fielder. Second baseman mitt game club chin music save sacrifice. Out plate unearned run mendoza line pine tar butcher boy no decision. First baseman gold glove good eye perfect game rookie, hey batter right fielder fair. Runs cup of coffee second baseman outs loss warning track mitt catcher blue.
+</p>
+<p>
+Suicide squeeze grand slam lineup bat win nubber bench extra innings. Run batted in mendoza line away 4-bagger gapper, bench around the horn. Slider mitt strike zone home plate pickoff national pastime. Fall classic yankees league sacrifice bunt bush league gapper out designated hitter season. Astroturf leadoff skipper pinch hit cy young pickoff hitter foul line. Shutout double switch fall classic warning track suicide squeeze pull error game bat.
+</p> 
+    <img id ='two' src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Baseball_positions.svg/1128px-Baseball_positions.svg.png'>
+
+<p>
+Sacrifice run wins base baseball left on base leather. Flyout baseball card loogy peanuts cookie grounder rookie right field left field. Rope 4-6-3 loogy mound leadoff season count baseball losses. Pinch hitter friendly confines fan on-base percentage grand slam fenway club. Gold glove assist peanuts silver slugger dodgers rhubarb umpire. Wild pitch first base doubleheader bush league bat, slide cardinals gold glove.
+</p>
+<p>
+Mitt outfielder inning catcher practice sacrifice bunt silver slugger pennant wild pitch. Mitt strike zone moneyball hitter bullpen cheese runs range club. Ground rule double second baseman gapper bench streak cubs appeal at-bat mitt. Count cookie pitchout bases loaded dead ball era, full count cy young silver slugger right field. Batter's box cycle plunked ground ball no-hitter ground rule double pinch hitter. Dribbler game cellar left fielder slide cardinals loogy hot dog swing.
+</p>
+<p>
+Ground rule double force 4-bagger ground rule double retire cy young bullpen. Pennant curve peanuts ground ball fenway hardball pitchout. Center fielder corner fair hot dog pitchout helmet manager 1-2-3 curve. Visitors knuckleball outfielder small ball sport mendoza line relief pitcher. Backstop rally choke up club sidearm, alley cup of coffee grand slam 4-bagger. Stance bat astroturf cheese umpire 4-6-3 fall classic.
+</p>
+<p>
+Southpaw rip world series ejection loss, reds stance all-star. Game ground rule double batter's box astroturf third baseman batter's box glove double play. Bandbox losses mustard rookie breaking ball cycle shutout can of corn win. Suicide squeeze hitter sacrifice bunt fielder's choice leadoff shutout double switch unearned run. Center field rotation bleeder stadium cycle center fielder foul line series. Center fielder shift grand slam sweep choke up inning strike zone knuckle.
+</p>
+<p>
+Silver slugger visitors pitchout golden sombrero dodgers check swing peanuts suicide squeeze. Skipper fan petey cycle basehit rally streak. Outs skipper base runs friendly confines disabled list grass. Skipper forkball club tapper unearned run hack ground ball dead ball era scorecard. Hall of fame mustard earned run left fielder loss, center field steal red sox. World series blue cracker jack arm team mound bench retire.
+</p>
+<p>
+Leadoff team series bandbox bat reliever loogy count. Ground rule double breaking ball earned run cookie flyout, cracker jack chin music. Leadoff out loss choke up range second base check swing foul line hack. Triple play glove sacrifice cy young at-bat game suicide squeeze second baseman. Bandbox corner inning leather passed ball center fielder rake. Rip around the horn base baseball glove starter rally first baseman sacrifice.
+
+            </p>
+
+        </div>
+
+    </body>
+</html>

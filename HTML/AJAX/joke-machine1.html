@@ -1,0 +1,45 @@
+<!-- Joke​ ​ Machine​ ​ 1
+Use​ ​ Postman​ ​ to​ ​ fetch​ ​ a ​ ​ random​ ​ joke​ ​ from​ ​ the​ ​ Random​ ​ Joke​ ​ API​​ ​ and​ ​ inspect​ ​ the​ ​ result. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joke Machine</title>
+    </head>
+
+    <body>
+
+        <h1>Joke Machine</h1>
+
+        <button id="joke">Get a Joke</button>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", (event) => {
+
+                body = document.querySelector("body");
+                button = document.querySelector("button");
+
+                button.addEventListener("click", (event) => {
+
+                    req = new XMLHttpRequest();
+                    
+                    req.addEventListener("load", (event) => {
+
+                        respTxt = event.currentTarget.responseText;
+                        respArr = JSON.parse(respTxt);
+
+                        console.log(respTxt)
+
+                        newP = document.createElement("p");
+                        newP.innerText = respTxt;
+
+                        body.appendChild(newP);
+                    });
+                
+                    req.open("GET", "https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_joke");
+                    req.send();
+                })
+            })
+        </script>
+    </body>
+</html>
