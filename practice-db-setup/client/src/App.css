@@ -1,0 +1,37 @@
+a {
+  margin: 20px;
+}
+
+nav {
+  width: 400px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: lightcoral;
+}
+
+nav a {
+  display: block;
+  font-size: 14px;
+  font-family: 'Anton', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  color: lightblue;
+  font-family: 'Anton', sans-serif;
+}
+
+body {
+  background-color: lightcoral;
+}
+
+li {
+  font-size: 14px;
+  color: white;
+}
+
+ul {
+  background-color: darkgray;
+}
