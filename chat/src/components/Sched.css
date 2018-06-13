@@ -1,0 +1,61 @@
+body {
+    padding-bottom: 200px;
+}
+
+#home {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+table, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    width: 200px;
+    height: 60px;
+}
+
+/* Controls head of TV Guide table. */
+#title {
+    height: 100px;
+}
+
+/* Controls style for "No shows at this time" message. */
+#tablefoot {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    height: 20px;
+}
+
+ul {
+    float: left;
+}
+
+#one {
+    border: 2px solid blue;
+}
+
+#two {
+    border: 2px solid green;
+    width: 500px;
+}
+
+/* Controls styling for today's date and time.*/
+#clock {
+    display: inline;
+    margin-left: 5px;
+}
+
+a {
+    color: blueviolet;
+}
+
+#tvTable {
+    border: 2px dotted red;
+    width: 300px;
+}

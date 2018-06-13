@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  background-color: green;
+  color: white;
+  font-family: 'Krona One', sans-serif;
+}
+
+a {
+  margin: 20px;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: green;
+  border-bottom: 1px solid white;
+  width: 100vw;
+  text-align: left;
+}
+
+img {
+  display: inline-block;
+}
